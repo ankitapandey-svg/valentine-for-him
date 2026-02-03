@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: #ffe6eb;
+      padding-top: 50px;
+    }
+    button {
+      font-size: 22px;
+      padding: 15px 35px;
+      margin: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+    }
+    #no {
+      position: absolute;
+      background: #999;
+      color: white;
+    }
+    #yes {
+      background: #ff4d6d;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Will you be my Valentine? 💌</h1>
+
+  <button id="yes" onclick="yesClicked()">YES 💖</button>
+  <button id="no" onmouseover="moveNo()">NO 🙈</button>
+
+  <script>
+    function moveNo() {
+      const noBtn = document.getElementById("no");
+      noBtn.style.left = Math.random() * 80 + "vw";
+      noBtn.style.top = Math.random() * 80 + "vh";
+    }
+
+    function yesClicked() {
+      window.location.href = "https://tenor.com/view/dancing-happy-dance-happy-birthday-happy-birthday-to-you-gif-5032254444894074067";
+    }
+  </script>
+
+</body>
+</html>
